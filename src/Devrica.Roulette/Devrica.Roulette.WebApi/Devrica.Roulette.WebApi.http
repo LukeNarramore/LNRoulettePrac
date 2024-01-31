@@ -1,0 +1,6 @@
+@Devrica.Roulette.WebApi_HostAddress = http://localhost:5162
+
+GET {{Devrica.Roulette.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
