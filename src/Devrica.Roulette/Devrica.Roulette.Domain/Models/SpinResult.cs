@@ -3,7 +3,7 @@
     public class SpinResult
     {
         public int Id { get; set; }
-        public int Number { get; set; }
-        public RedBlack RedBlack { get; set; }
+        public int SpinNumber { get; set; }
+        public ResultColor Color { get; set; }
     }
 }

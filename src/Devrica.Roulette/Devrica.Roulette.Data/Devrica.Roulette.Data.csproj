@@ -7,16 +7,41 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="create_tables.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="create_tables.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="DataAccess\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.1" />
     <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Devrica.Roulette.Domain\Devrica.Roulette.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="appsettings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>appsettings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

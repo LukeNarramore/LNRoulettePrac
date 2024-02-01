@@ -1,8 +1,3 @@
----- Create a new SQLite database
---CREATE DATABASE IF NOT EXISTS roulette;
-
----- Use the created database
---USE roulette;
 
 -- Create a table to store spin results
 CREATE TABLE IF NOT EXISTS spin_results (
